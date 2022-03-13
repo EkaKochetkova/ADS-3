@@ -9,7 +9,7 @@ int cbinsearch(int* arr, int size, int value) {
             int i = mid + 1;
             int j = mid - 1;
             int count = 1;
-            while ((arr[i] == value || arr[j] == value) && ((i <= size) && (j >= 0))) {
+            while (arr[i] == value || arr[j] == value) {
                 if (arr[mid + i] == value) {
                     count += 1;
                     i += 1;
